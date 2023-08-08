@@ -19,7 +19,7 @@ RUN  CGO_ENABLED=0 GOOS=linux  make docker-build-linux-amd64
 #RUN GOOS=freebsd make build-freebsd-amd64 
 
 # Multi-stage build docker image
-FROM alpine:latest
+FROM alpine:3.18.3
 
 # File Author / Maintainer
 MAINTAINER Kris Nova <kris@nivenly.com>
